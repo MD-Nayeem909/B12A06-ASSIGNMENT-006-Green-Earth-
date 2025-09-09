@@ -152,7 +152,135 @@
       </section>
     </header>
 
- 
+    <main>
+      <!-- Choose Your Trees Section start here -->
+      <section class="">
+        <div class="my-[100px] mx-auto md:w-11/12">
+          <h2
+            class="text-[#1F2937] text-[2rem] font-semibold text-center mb-10"
+          >
+            Choose Your Trees
+          </h2>
+
+          <div class="grid grid-cols-12 gap-8">
+            <!-- Left side Categories Section -->
+            <div
+              class="col-span-12 md:col-span-3 lg:col-span-2 mx-auto text-center md:text-left"
+            >
+              <h3 class="font-semibold text-xl mb-4 text-[#1F2937]">
+                Categories
+              </h3>
+              <ul
+                id="tree-categories"
+                class="[&>*]:rounded-lg [&>*]:text-[#1F2937] [&>*]:text-xl [&>*]:py-2 [&>*]:px-3 [&>*]:dropdown-content [&>*]:btn btn-ghost [&>*]:hover:bg-[#cff0dc] [&>*]:cursor-pointer"
+                tabindex="0"
+                role="button"
+              >
+                <li
+                  id="plants"
+                  onclick="getData(this)"
+                  class="active-bg-green-selection mb-2"
+                >
+                  <a>All Trees</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Center Card section -->
+            <div
+              id="card-container"
+              class="col-span-12 md:col-span-9 lg:col-span-8 grid w-full md:grid-cols-2 lg:grid-cols-3 items-start lg:max-h-[850px] overflow-y-auto gap-[30px]"
+            >
+              <!-- <div class="card bg-base-100 w-96 shadow-sm space-y-3 p-4">
+                <figure>
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Mango Tree"
+                    class=""
+                  />
+                </figure>
+                <div class="card-body p-0">
+                  <h2 class="card-title">Mango Tree</h2>
+                  <p>
+                    A fast-growing tropical tree that produces delicious, juicy
+                    mangoes during summer. Its dense green
+                  </p>
+                  <div class="card-actions justify-between">
+                    <div
+                      class="badge rounded-full bg-[#CFF0DC] text-[#15803D] py-1 px-3 font-medium"
+                    >
+                      Fruit Tree
+                    </div>
+                    <div class="badge font-semibold">৳<span>500</span></div>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="btn border-none rounded-full w-full bg-[#15803D] font-medium text-[#ffffff]"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div> -->
+            </div>
+
+            <!-- Right side Cart Section -->
+            <div class="hidden lg:block lg:col-span-2 bg-white p-4 space-y-2">
+              <div>
+                <h3 class="font-semibold text-xl">Your Cart</h3>
+              </div>
+              <div id="add-card-container">
+                <!-- <div
+                  class="flex items-center justify-between bg-[#f0fdf4] py-2 px-3 shadow"
+                >
+                  <div>
+                    <h4 class="font-semibold">Mango Tree</h4>
+                    <p class="text-[#1F293780]">
+                      ৳500 <i class="fa-solid fa-xmark"></i> 1
+                    </p>
+                  </div>
+                  <button class="btn p-1">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div> -->
+              </div>
+              <hr class="border-gray-200" />
+              <div class="flex justify-between font-medium text-[#1F2937]">
+                <h4>Total:</h4>
+                <span id="total-price" class="">৳0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Open the card modal section -->
+        <dialog id="my_modal_1" class="modal">
+          <!-- <div class="modal-box">
+            <h3 class="text-lg font-bold">Banyan Tree</h3>
+            <figure class="">
+              <img
+                src="./assets/about.png"
+                alt=""
+                class="h-ful w-full -translate-y-4 object-fill"
+              />
+            </figure>
+            <span>Category : </span>
+            <span>Shade Tree</span><br>
+            <span>Price</span>
+            <span>৳ 1200</span><br>
+            <span>Description</span>
+            <p>A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green</p>
+            <p class="py-4">Press ESC key or click the button below to close</p>
+            <div class="modal-action">
+              <form method="dialog"> -->
+          <!-- if there is a button in form, it will close the modal -->
+          <!-- <button class="btn">Close</button>
+              </form>
+            </div>
+          </div> -->
+        </dialog>
+      </section>
+
+    </main>
     <footer
       class="footer sm:footer-horizontal footer-center bg-[#14532D] text-base-content text-white p-4"
     >
